@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	 <style>
+        #container{
+            height: 600px;
+            width: 500px;
+            border: 1px solid black;
+            margin: auto;
+            background-color: darkkhaki;
+        }
+        #one{
+            /* border: 1px solid black; */
+            height: 40px;
+            background-color: rgb(220, 85, 35);
+        }
+        #one h1{
+            margin-top: 0px;
+            text-align: center;
+        }
+        #two{
+            /* border: 1px solid black; */
+            height: 45px;
+            margin-top: 5px;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .box{
+            height: 40px;
+            width: 150px;
+            /* border: 1px solid rgb(143, 143, 16); */
+            text-align: center;
+        }
+        .box span{
+            font-size: 30px;
+            font-weight: 85px;
+        }
+        .input_box{
+            height: 40px;
+            width: 300px;
+            /* border: 1px solid blue; */
+            margin-left: 15px;
+            display: flex;
+
+        }
+        .input_box input{
+            width: 300px;
+            font-size: 25px;
+            /* border: 1px solid rgb(0, 0, 0); */
+        }
+        .input_box span{
+            font-size: 25px;
+        }
+        .input_box select{
+            width:300px;
+            font-size: 25px;
+        }
+        .input_box textarea{
+            font-size: 25px;
+            width: 295px;
+        }
+        button{
+            width:155px;
+            height:40px;
+            margin-left:65px;
+            margin-top:55px;
+            font-size: 25px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: lightgreen;
+            border-radius: 50px;
+        }
+    </style>
+<body>
+	<form action="SaveStudent" method="post">
+        <div id="container">
+            <div id="one">
+                <h1>Add Details</h1>
+            </div>
+            <div id="two">
+                <div class="box">
+                    <span>Name</span>
+                </div>
+                <div class="input_box">
+                    <input type="text" name="name" id="" placeholder="name">
+                </div>  
+            </div>
+            <div id="two">
+                <div class="box">
+                    <span>Mobile</span>
+                </div>
+                <div class="input_box">
+                    <input type="tel" name="mobile" id=""  placeholder="Mobile number"pattern="[0-9]{10}">
+                </div>   
+            </div>
+            <div id="two">
+                <div class="box">
+                    <span>Email</span>
+                </div>
+                <div class="input_box">
+                    <input type="email" name="email" id="" placeholder="Email">
+                </div>   
+            </div>
+
+            <div id="two">
+                <div class="box">
+                    <span>DOB</span>
+                </div>
+                <div class="input_box">
+                    <input type="date" name="DOB" id="" placeholder="DOB">
+                </div>   
+            </div>
+
+            <div id="two">
+                <div class="box">
+                    <span>Gender</span>
+                </div>
+                <div class="input_box">
+                   <span>Male</span><input type="radio" name="Gender"  value="male" id="Gender">
+                   <span>Female</span><input type="radio" name="Gender"  value="female" id="Gender">
+                </div>   
+            </div>
+            <div id="two">
+                <div class="box">
+                    <span>Country</span>
+                </div>
+                <div class="input_box">
+                    <select name="Country" id="Country">
+                        <option value="">----Select----</option>
+                        <option value="India">India</option>
+                        <option value="pakistan">pakistan</option>
+                        <option value="afghanistan">afghanistan</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zembabwae">Zembabwae</option>
+                    </select>
+                </div>   
+            </div>
+
+            <div id="two">
+                <div class="box">
+                    <span>Hobbiess</span>
+                </div>
+                <div class="input_box">
+                    <input type="checkbox" name="hobbies" value="Movies" id="">Movies
+                    <input type="checkbox" name="hobbies" value="Dance"  id="">Dance
+                    <input type="checkbox" name="hobbies" value="Singing"  id="">Singing
+                    <input type="checkbox" name="hobbies"  value="Driving" id="">Driving
+                </div>   
+            </div>
+
+            <div id="two">
+                <div class="box">
+                    <span>Address</span>
+                </div>
+                <div class="input_box">
+                    <textarea name="address" id="" cols="80" rows="30" placeholder="Message"></textarea>
+                </div>   
+            </div>
+
+            <div id="two">
+                <button type="reset">Cancel</button><button>Submit</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
